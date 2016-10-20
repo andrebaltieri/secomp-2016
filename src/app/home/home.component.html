@@ -1,0 +1,11 @@
+<p>
+	home works!
+</p>
+
+<button (click)="save()">ADD</button>
+
+<ul>
+	<li *ngFor="let item of items | async">
+		{{ item.name }} -{{ item.$key }} 
+	</li>
+</ul>
